@@ -82,7 +82,7 @@ const addDots = () => {
     const dot = document.createElement("div");
     dot.classList.add("dot");
 
-    dot.addEventListener("click", () => { switchSlide(i) });
+    dot.addEventListener("click", () => { changeSlide(i) });
     if (i === index) dot.classList.add("dot_selected");
     dots.appendChild(dot);
   }
