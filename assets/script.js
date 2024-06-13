@@ -82,16 +82,13 @@ const addDots = () => {
     const dot = document.createElement("div");
     dot.classList.add("dot");
 
-    dot.addEventListener("click", () => { changeSlide(i) });
+    dot.addEventListener("click", () => { switchSlide(i) });
     if (i === index) dot.classList.add("dot_selected");
     dots.appendChild(dot);
   }
 }
 
 //! ******************** MAIN ******************** //
-
-console.log("right : ", typeof right, right);
-console.log("left : ", typeof left, left);
 
 addDots();
 addListeners();
